@@ -43,7 +43,7 @@ CSS3 Animation 有八个属性
     
     step-end等同于steps(1,end)：动画分成一步，动画执行时以结尾端点为开始，默认值为end
     
-    看看W3C的规范 [transition-timing-function](https://www.w3.org/TR/2012/WD-css3-transitions-20120403/#transition-timing-function-property)
+    看看W3C的规范 [我的博客](http://blog.csdn.net/guodongxiaren)  
     
     
     
