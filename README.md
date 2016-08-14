@@ -46,6 +46,18 @@ CSS3 Animation 有八个属性
     
 看看W3C的规范 [transition-timing-function](https://www.w3.org/TR/2012/WD-css3-transitions-20120403/#transition-timing-function-property)
     
+####steps第一个参数的错误的理解：
+
+    step(5,start)
+    
+    第一个参数 number 为指定的间隔数，即把 keyframes 每帧分为 n 步阶段性展示，作用于<b>每两个关键帧之间，而不是整个动画</b>
+    
+```css
+  @-webkit-keyframes circle {
+        0% {background-position-x: 0;}
+        100%{background-position-x: -400px;}
+ }
+ ```
     
     
     
