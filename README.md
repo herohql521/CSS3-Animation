@@ -58,6 +58,19 @@ CSS3 Animation 有八个属性
         100%{background-position-x: -400px;}
  }
  ```
+    此刻设置steps(5，start）那么会发现5张图会出现帧动画的效果，因为steps中的5把 0% – 100%的规则，内部分成5个等分
+
+实际内部会执行这样一个关键帧效果
+
+```css
+@-webkit-keyframes circle {
+        0% {background-position-x: 0;}
+        25% {background-position-x: -100px;}
+        50% {background-position-x:-200px;}
+        75%{background-position-x: -300px;}
+        100%{background-position-x: -400px;}
+```
+
     
     
     
