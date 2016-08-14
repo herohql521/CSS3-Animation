@@ -19,8 +19,11 @@ CSS3 Animation 有八个属性
     
     8.animation-timing-function
     
-前面六个很好理解
-  
+
+ 前面六个很好理解,看W3C对animation-fill-mode的解释：
+    
+    
+  ![img](https://github.com/herohql521/js-tips/blob/master/imgs/animation-fill-mode.JPG)
   
     
     
