@@ -9,11 +9,11 @@ CSS3 Animation 有八个属性
   
     3.animation-delay
     
-    4.animation-interation-count
+    4.animation-interation-count　　n　|　infinite
     
-    5.animation-direction
+    5.animation-direction　　　　　normal　|　alternate
     
-    6.animation-play-state
+    6.animation-play-state　　　　running　|　paused
     
     7.animation-fil-mode
     
