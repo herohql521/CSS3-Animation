@@ -91,7 +91,7 @@ step(5,start)</br>
  }
  ```
  
-就好比把动画整体分成3帧，每两帧之间分成5个等帧，好比0% ~ 50%之间分成了4个等分， 50% ~ 100%也分成了4个等分。
+就好比把动画整体分成3帧，每两帧之间分成5个等份，好比0% ~ 50%之间分成了5个等份 ,50% ~ 100%也分成了5个等份。等同于每2帧之间插入了(n-1)帧 
 
 实际内部会执行这样的关键帧效果
 
@@ -99,19 +99,31 @@ step(5,start)</br>
 @0webkit-ketframes circle{
         0% {background-position-x: 0;}
         
-            12.5%{background-position-x: -50px;}
-            25%  {background-position-x: -100px;}
-            37.5%{background-position-x: -150;}
+            10% {background-position-x: -50px;}
+            20% {background-position-x: -100px;}
+            30% {background-position-x: -150;}
+            40% {background-position-x: -200;}
             
-        50%{background-position-x: -200px;}
+        50%{background-position-x: -250px;}
             
-            62.5%{background-position-x: -250;}
-            75%  {background-position-x: -300;}
-            87.5%{background-position-x: -350;}
+            60% {background-position-x: -300;}
+            70% {background-position-x: -350;}
+            80% {background-position-x: -400;}
+            90% {background-position-x: -450;}
             
-        100%{background-position-x: -400;}
+        100%{background-position-x: -500;}
 }
 ```
+
+###[查看demo](https://herohql521.github.io/CSS3-Animation/5fps2.html)
+    
+    从demo可以看出来，每次动画移动-50px,和上面的分解动作一样。
+    
+###再次强调　　timing-function 作用于每两个关键帧之间，而不是整个动画
+
+####steps第二个参数的正确的理解：
+
+    第二个参数可选，接受 start 和 end 两个值，指定在每个间隔的起点或是终点发生阶跃变化，默认为 end。
  
  
 
