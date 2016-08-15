@@ -59,21 +59,24 @@ step(5,start)</br>
 ```css
   @-webkit-keyframes circle {
         0% {background-position-x: 0;}
-        100%{background-position-x: -400px;}
+        100%{background-position-x: -500px;}
  }
  ```
  
- 此刻设置steps(5，end）那么会发现5张图会出现帧动画的效果，因为steps中的5把 0% – 100%的规则，内部分成5个等帧，也就是（n-1）个等分
+ 此刻设置steps(5，end）那么会发现5张图会出现帧动画的效果，因为steps中的5把 0% – 
+ 
+ 100%的规则，内部分成5个等分，也就是在两帧之间又添加了（n-1）个帧
 
 实际内部会执行这样一个关键帧效果<br>
 
 ```css
 @-webkit-keyframes circle {
-        0% {background-position-x: 0;}
-        25% {background-position-x: -100px;}
-        50% {background-position-x:-200px;}
-        75%{background-position-x: -300px;}
-        100%{background-position-x: -400px;}
+        0%  {background-position-x: 0;}
+        20% {background-position-x: -100px;}
+        40% {background-position-x:-200px;}
+        60% {background-position-x: -300px;}
+        80% {background-position-x: -400px;}
+        100%{background-position0x: -500px;}
 ```
 
 ###timing-function 作用于每两个关键帧之间，而不是整个动画
