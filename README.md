@@ -55,7 +55,7 @@ step(5,start)</br>
 
 比如一张5帧的雪碧图，每个精灵图宽100px。
 
-![img](https://github.com/herohql521/CSS3-Animation/blob/master/5fps.jpg)
+![img](https://herohql521.github.io/CSS3-Animation/5fps.jpg)
 
 
 ```css
@@ -65,7 +65,7 @@ step(5,start)</br>
  }
  ```
  
- 此刻设置steps(5，end）那么会发现5张图会出现帧动画的效果，因为steps中的5把 0%  – 100%的规则，内部分成5个等分，也就是在两帧之间又添加了（n-1）个帧
+ 此刻设置steps(5，end）那么会发现5张图会出现帧动画的效果，因为steps中的5把 0%  – 100%的规则，内部分成5个等分，没份占20%，也就是在两帧之间又添加了（n-1）个帧
 
 实际内部会执行这样一个关键帧效果<br>
 
@@ -79,7 +79,7 @@ step(5,start)</br>
         100%{background-position0x: -500px;}
 ```
 
-###timing-function 作用于每两个关键帧之间，而不是整个动画
+###timing-function 作用于每两个关键帧之间，而不是整个动画　　[查看demo](https://herohql521.github.io/CSS3-Animation/5fps.html)
 
 如果稍微修改一下，加入一个50%的状态</br>
 
