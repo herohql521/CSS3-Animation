@@ -55,6 +55,8 @@ step(5,start)</br>
 
 比如一张5帧的雪碧图，每个精灵图宽100px。
 
+![img](https://github.com/herohql521/CSS3-Animation/blob/master/5fps.jpg)
+
 
 ```css
   @-webkit-keyframes circle {
