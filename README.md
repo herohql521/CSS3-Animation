@@ -96,7 +96,7 @@ step(5,start)</br>
 实际内部会执行这样的关键帧效果
 
 ```css
-@0webkit-ketframes circle{
+@-webkit-keyframes circle{
         0% {background-position-x: 0;}
         
             10% {background-position-x: -50px;}
