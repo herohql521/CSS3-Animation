@@ -48,7 +48,7 @@ CSS3 Animation 有八个属性
     
 ####steps第一个参数的正确的理解：
 
-step(5,start)</br>
+steps(5,start)</br>
     
 第一个参数 number 为指定的间隔数，即把 keyframes 每帧分为 n 步阶段性展示，作用于<b>每两个关键帧之间，而不是整个动画</b></br>
 
@@ -143,7 +143,7 @@ step(5,start)</br>
 
 
  </br> </br> </br>
-#####最后要感谢一个叫[Aaron艾伦](http://www.cnblogs.com/aaronjs/p/4642015.html)的大神,，这篇文章让我收货不少,点击名字有传送门。
+#####最后感谢[Aaron艾伦](http://www.cnblogs.com/aaronjs/p/4642015.html)的这篇文章让我收货不少,点击名字有传送门。
 
     
     
